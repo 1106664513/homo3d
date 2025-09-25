@@ -27,9 +27,7 @@ include(FetchContent)
 # Fetch OpenVDB 8.2
 FetchContent_Declare(
   openvdb
-#  GIT_REPOSITORY https://github.com/AcademySoftwareFoundation/openvdb
-#  GIT_TAG        v8.2.0 # release-1.10.0
-  URL https://github.com/AcademySoftwareFoundation/openvdb/archive/refs/tags/v8.2.0.tar.gz
+  URL ${CMAKE_SOURCE_DIR}/v8.2.0.tar.gz
   URL_HASH MD5=2852fe7176071eaa18ab9ccfad5ec403
 )
 FetchContent_MakeAvailable(openvdb)
